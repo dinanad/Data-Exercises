@@ -1,0 +1,156 @@
+{% extends 'layout.html' %}
+
+<html>
+    <head>
+    </head>
+
+    <body>
+
+        {% block body %}
+        <div class="card">
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <h3>Data National Health and Nutrition Examination Survey (NHANES) 2017-2018</h3>
+                    </div>
+                </div>           
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-6 ">
+
+                <img src="{{url_for('static',filename='images/category_diabetes.png')}}" alt="case diabetes" class="img-thumbnail">
+            </div>
+        
+            <div class="col-md-6">
+        
+                <img src="{{url_for('static',filename='images/category_health.png')}}" alt="case diabetes" class="img-thumbnail">
+        
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row ">
+
+            <div class="col-md-6 ">
+                <h5 class='mt-2 mb-0'>Diabetic Risk</h5>
+                <div class="chart mt-0" id='barplot_1'>
+                </div>
+            </div>
+        
+            <div class="col-md-6">
+        
+                <h5 class="mt-2 mb-0">Healthy Weight Risk Diabetes</h5>
+                <div class="chart" id='barplot_2'>
+                </div>
+        
+            </div>
+        </div>
+        
+        <script>
+            var barplot_1 = {{data3 | safe}}
+            var barplot_2 = {{data4 | safe}}
+            Plotly.plot("barplot_1", barplot_1)
+            Plotly.plot("barplot_2", barplot_2)
+        </script>
+
+        <div class="row ">
+
+            <div class="col-md-6 ">
+                <h5 class='mt-2 mb-0'>Prediabetic & Undiagnose Diabetic Risk</h5>
+                <div class="chart mt-0" id='barplot_3'>
+                </div>
+            </div>
+        
+            <div class="col-md-6">
+        
+                <h5 class="mt-2 mb-0"> Healthy Weight Prediabetes & Undiagnose Diabetes</h5>
+                <div class="chart" id='barplot_4'>
+                </div>
+        
+            </div>
+        </div>
+        
+        <script>
+            var barplot_3 = {{data5 | safe}}
+            var barplot_4 = {{data6 | safe}}
+            Plotly.plot("barplot_3", barplot_3)
+            Plotly.plot("barplot_4", barplot_4)
+        </script>
+
+
+        <div class="card">
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <h3>Can Type 2 Diabetes Be Prevented?</h3>
+                        <div class="lead">Yes! You can prevent or delay type 2 diabetes with proven, achievable lifestyle changes—such as losing a small amount of weight and getting more physically active—even if you’re at high risk.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="media col-md-16 mt-3">
+                        <a class="pull-left align-self-center mr-3" href="#">
+                            <img class="media-object" src="https://www.yourprovidencehealth.com/Content/Uploads/Providence%20Hospitals/images/Blog%20Photos/Healthy%20Eating%20tips%20from%20Providence%20Health.jpg" 
+                            width='200' height='120' alt="Media Object">
+                        </a>
+                        <div class="media-body">
+                            <h6 class="media-heading">Making healthy food choices that will help you lose weight if needed.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="media col-md-16 mt-3">
+                        <a class="pull-left align-self-center mr-3" href="#">
+                            <img class="media-object" src="data:image/jpeg;base64,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" 
+                            width='200' height='120' alt="Media Object">
+                        </a>
+                        <div class="media-body">
+                            <h6 class="media-heading">
+                                Take steps to increase your daily physical activity to help build a healthier future.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="list-group">
+                            <a href="/" class="list-group-item">
+                                <h6>
+                                    Take test prediction risk diabetes. Click Here
+                                </h6>
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="/additional" class="list-group-item">
+                                <h6>
+                                    Take test prediction prediabetes/ undiagnose diabetes. Click Here
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endblock body %}
+        
+
+
+    </body>
+</html>

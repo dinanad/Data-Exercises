@@ -1,0 +1,79 @@
+{% extends "layout.html"%}
+
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        
+        {% block body %}
+        <div class="container pt 5">
+            <div class="row justify-content-center">
+                <div class="col-md-6 mt-3">
+                    <h3> Fill this from for Predict Risk Diabetes </h3>
+
+                    <form action="/" method="POST">
+
+                        <!-- Athritis-->
+                        <select class="form-control form-control-sm" name="arthritis">
+                            <option value="" disabled selected>Has a doctor or other health professional ever told you had arthritis?</option>
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
+                        </select>
+
+                        <!-- Diabetic Relative-->
+                        <select class="form-control form-control-sm mt-2" name="diabetic_relative">
+                            <option value="" disabled selected>Close relative had diabetes?</option>
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
+                        </select>
+
+                        <!-- Overweight-->
+                        <select class="form-control form-control-sm mt-2" name="overweight">
+                            <option value="" disabled selected>Has a doctor or other health professional ever told you were overweight?</option>
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
+                        </select>
+
+                        <!-- High Blood Pressure-->
+                        <select class="form-control form-control-sm mt-2" name="high_bp">
+                            <option value="" disabled selected>Have you ever been told by a doctor that you had high blood pressure?</option>
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
+                        </select>
+
+                        <!-- High Cholesterol-->
+                        <select class="form-control form-control-sm mt-2" name="high_chol">
+                            <option value="" disabled selected>Have you ever been told by a doctor that you had high cholesterol?</option>
+                            <option value="yes">yes</option>
+                            <option value="no">no</option>
+                        </select>
+
+                        <!--systolic-->
+                        <input type="number" name="systolic" class="form-control form-control-sm mt-2" max="290" min="70"  placeholder="Systolic blood pressure">
+                        
+                        <!--BMI-->
+                        <input type="number" name="bmi" class="form-control form-control-sm mt-2" max="43" min="11" step="any" placeholder="BMI">
+                        
+                        <!--Arm Circumferences-->
+                        <input type="number" name="arm_circumference" class="form-control form-control-sm mt-2" max="57" min="11" step="any" placeholder="Arm Circumference (cm)">
+                        
+                        <!--Waist Hip Ratio-->
+                        <input type="number" name="WH_ratio" class="form-control form-control-sm mt-2"  max="2" min="0" step="any" placeholder="Waist Hip Ratio">
+                        
+                        
+
+                        <button type="submit" class="btn btn-danger btn-block mt-4">Let's Predict</button>
+
+
+
+                    </form>
+                </div>
+                
+            </div>
+
+        </div>       
+        {% endblock body %}
+    </body>
+</html>

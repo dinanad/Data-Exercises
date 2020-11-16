@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+{% block body %}
+<header>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h3>The good news is that you can manage your risk for type 2 diabetes.</h3>
+                    <div class="lead">Small steps make a big difference and can help you live a longer, healthier life.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center" >
+        <div class="alert alert-danger"><h3>{{hasil_prediction}}</h3></div>
+    </div>
+</div>
+
+
+<div class="container">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <h6>
+                If you are in Low Risk Diabetes
+            </h6>
+            <p class="list-group-item-text">
+                One in 100 people with low risk will get type 2 diabetes in the next 10 years.
+            </p>
+            <p class="list-group-item-text">
+                This is great, but keep an eye on any changes that could increase your risk in future. It’s important to maintain a healthy lifestyle to make sure your risk stays low. Our risk of type 2 diabetes increases as we get older, but making healthier choices and maintaining a healthy weight are the best things you can do for your health. Keep active and healthy lifestyle.
+            </p>
+        </li>
+        <li class="list-group-item">
+            <h6>
+                If you are in Increased Risk Diabetes
+            </h6>
+            <p class="list-group-item-text">
+                One in 35 people with increased risk will get type 2 diabetes in the next 10 years.
+            </p>
+            <p class="list-group-item-text">
+                If you’re at increased risk, look at where you’re BMI, Arm Circumfences and Waist Hip Ratio. Could you reduce your weight or waist size? Making some small changes now could make a big difference to your health in the future, such as making healthy food choices and doing more physical activity.
+            </p>
+        </li>
+        <li class="list-group-item">
+            <h6>
+                If you are in Moderate Risk Diabetes
+            </h6>
+            <p class="list-group-item-text">
+                One out of 10 people with moderate risk will get type 2 diabetes in the next 10 years.
+            </p>
+            <p class="list-group-item-text">
+                You need to talk about your risk with your doctor and plan what action you're going to take. You can’t change some things, but making healthier lifestyle choices could help to reduce your risk. 
+            </p>
+
+        </li>
+        <li class="list-group-item">
+            <h6>
+                If you are in High Risk Diabetes
+            </h6>
+            <p class="list-group-item-text">
+                Your first step is to see your doctor to see if additional testing is needed. However only doctor can tell for sure if you do have type 2 diabetes or prediabetes.
+            </p>
+            <p class="list-group-item-text">
+                The good news is that 3 in 5 cases of type 2 diabetes can be prevented or delayed so finding out your risk is the first important step. You can take the Diabetes Prevention Programme. 
+            </p>
+
+        </li>
+
+      </ul>
+</div>
+<div class="container">
+    <div class="col-sm justify-content-center">
+        <div class="media col-md-16 mt-3">
+            <img class="media-object" src="https://scontent.fbdo9-1.fna.fbcdn.net/v/t31.0-8/11025684_10152743210644033_6108360889025854144_o.png?_nc_cat=107&ccb=2&_nc_sid=9267fe&_nc_ohc=yjpCQVGJSeUAX-hLYop&_nc_ht=scontent.fbdo9-1.fna&oh=3e10f09d632f55a791057c9082875e3d&oe=5FD6E1CE" 
+                width='500' height='320' alt="Media Object">
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="list-group">
+        <a href="/additional" class="list-group-item">
+            <h6>
+                You can take test prediction prediabetes/ undiagnose diabetes. Click Here
+            </h6>
+        </a>
+</div>
+
+{% endblock body %}
+    
