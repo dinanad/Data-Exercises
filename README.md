@@ -24,7 +24,7 @@ The next step are define target and features, for target use questioner and data
 
 4. Dashboard
 
-  From the analysis of existing data and models, a predicting risk diabetes is compiled which consists of 3 parts, namely home, additional test and about Diabetes Risk. In the about section, you can analyze the description risk status by health weight . In the home section, you can Calculate Risk Diabetes, new data can be analyzed regarding the risk diabetes of user. And the additioanl test, you can Calculate Risk Prediabetes, new data can be analyzed regarding the risk diabetes of user.
+  From the analysis of existing data and models, a predicting risk diabetes is compiled which consists of 3 parts, namely home, additional test and about Diabetes Risk. In the about section, you can analyze the description risk status by health weight . In the home section, you can Calculate Risk Diabetes, new data can be analyzed regarding the risk diabetes of user. And the additioanl test, you can Calculate Risk Prediabetes, new data can be analyzed regarding the risk prediabetes of user.
 
 5. Deck Presentation
 
