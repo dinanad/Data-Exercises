@@ -4,14 +4,14 @@ In general this project divided into 5 parts.
 
 1. Preparation Data
 
-   This project use data from National Health and Nutrition Examination Surveys 2017 - 2018.
+This project use data from National Health and Nutrition Examination Surveys 2017 - 2018.
    - Demographic Data
    - Examination Data
    - Laboratory Data
    - Questioner Data
    Source Data : https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx
    
-   The next step are define target and features, for target use questioner and data laboratory which respondent have  diabetes & prediabetes risk. After fill missing value in dataset that might be done from remining data, we exploratory data analysis and prepare data for the next stage (case I and case II).
+The next step are define target and features, for target use questioner and data laboratory which respondent have  diabetes & prediabetes risk. After fill missing value in dataset that might be done from remining data, we exploratory data analysis and prepare data for the next stage (case I and case II).
    
 2. Prediction Risk Diabetes (Case I)
 
