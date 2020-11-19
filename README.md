@@ -9,6 +9,7 @@ This project use data from National Health and Nutrition Examination Surveys 201
    - Examination Data
    - Laboratory Data
    - Questioner Data
+   
    Source Data : https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx
    
 The next step are define target and features, for target use questioner and data laboratory which respondent have  diabetes & prediabetes risk. After fill missing value in dataset that might be done from remining data, we exploratory data analysis and prepare data for the next stage (case I and case II).
