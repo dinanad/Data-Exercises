@@ -16,11 +16,11 @@ The next step are define target and features, for target use questioner and data
    
 2. Prediction Risk Diabetes (Case I)
 
-  For prediction risk diabetes Data Biochemistry Profile not include in analysis because objective model. The model will be used for screening so that features are selected based on the ease of filling by user. Check percentage missing value features, association and correlation target with features. This process can help the researcher to find features which will be used in modelling. The next stage is modelling with some algorithm classifier and evalute preformance model.
+  Jupyter Notebook for prediction risk diabetes, Data Biochemistry Profile not include in analysis because objective model. The model will be used for screening so that features are selected based on the ease of filling by user. Check percentage missing value features, association and correlation target with features. This process can help the researcher to find features which will be used in modelling. The next stage is modelling with some algorithm classifier and evalute preformance model.
 
 3. Prediction Risk Prediabetes (Case II)
 
-  For prediction risk prediabetes we use all features. Check percentage missing value features, association and correlation target with features. The process same with case I, we evalute preformance model and choose best model for predicting prediabetes.
+  Jupyter Notebook for prediction risk prediabetes we use all features. Check percentage missing value features, association and correlation target with features. The process same with case I, we evalute preformance model and choose best model for predicting prediabetes.
 
 4. Dashboard
 
