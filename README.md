@@ -1,3 +1,3 @@
-# Exercises Data
+# Data science study notes
 
-Data science study notes
+
